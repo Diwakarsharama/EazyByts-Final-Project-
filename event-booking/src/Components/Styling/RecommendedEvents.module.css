@@ -1,0 +1,101 @@
+/* General Parent Container */
+.parent {
+    margin: 50px 0px;
+}
+
+/* Header Section */
+.parent > .parent__text {
+    width: 78%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.parent__text h1 {
+    font-weight: 700;
+    color: white;
+    font-size: 28px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+/* Link Styling */
+.parent__text .link {
+    font-size: 18px;
+    font-weight: 500;
+    color: crimson;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.parent__text .link:hover {
+    color: #ff4500;
+}
+
+/* Entertainment Container */
+.entertainment_container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.entertainment_container img {
+    width: 90%;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.entertainment_container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Premier Events Container */
+.premier__container {
+    padding: 30px 0;
+    background: linear-gradient(135deg, #f9484a 0%, #fbd72b 100%);
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Inside Premier Container */
+.premier__container > span,
+.premier__container > div > h1 {
+    color: black !important;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Hover Effect on Cards */
+.premier__container > div > div div {
+    color: black;
+}
+
+.parent > div > div div:hover {
+    transform: scale(1.08);
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .parent__text {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .parent__text h1 {
+        font-size: 24px;
+    }
+
+    .entertainment_container {
+        width: 95%;
+    }
+
+    .premier__container {
+        padding: 20px 10px;
+    }
+}
